@@ -28,6 +28,16 @@ public class LeftFragment extends Fragment {
         final Button setTextAction = (Button) root.findViewById(R.id.lf_set_text);
         setTextAction.setText(getString(R.string.lf_set_text));
 
+        setTextAction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RightFragment fragment = (RightFragment) getActivity().getSupportFragmentManager()
+                        .findFragmentByTag(RightFragment.class.getSimpleName());
+
+                fragment.setText("test text");
+            }
+        });
+
         return root;
     }
 }
