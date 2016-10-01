@@ -30,5 +30,4 @@ public class LeftFragment extends Fragment {
 
         return root;
     }
-
 }

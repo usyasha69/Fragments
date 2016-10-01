@@ -6,9 +6,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 public class RightFragment extends Fragment {
+    private TextView textLabel;
 
     public static RightFragment newInstance() {
 
@@ -25,6 +27,7 @@ public class RightFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_right, container, false);
 
+        textLabel = (TextView) root.findViewById(R.id.rf_text_label);
         return root;
     }
 
