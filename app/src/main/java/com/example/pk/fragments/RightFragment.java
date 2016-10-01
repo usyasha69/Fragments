@@ -31,4 +31,8 @@ public class RightFragment extends Fragment {
         return root;
     }
 
+    public void setText(String text) {
+        textLabel.setText(text);
+    }
+
 }
